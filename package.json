@@ -12,7 +12,11 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json)\"",
-    "unit": "jest --config ./config/jest/jest.config.ts"
+    "test:unit": "jest --config ./config/jest/jest.config.ts",
+    "test:ui": "npx loki test",
+    "test:ui:ok": "npx loki aprove",
+    "storybook": "storybook dev -p 6006 -c ./config/storybook",
+    "storybook:build": "storybook build -c ./config/storybook"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +26,13 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-interactions": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/react": "^7.0.26",
+    "@storybook/react-webpack5": "^7.0.26",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@svgr/webpack": "^8.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
@@ -46,16 +57,19 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-storybook": "^0.6.12",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "loki": "^0.32.0",
     "mini-css-extract-plugin": "^2.7.6",
     "prettier": "2.8",
     "react-refresh": "^0.14.0",
     "regenerator-runtime": "^0.13.11",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
+    "storybook": "^7.0.26",
     "style-loader": "^3.3.3",
     "stylelint": "^15.10.1",
     "stylelint-config-rational-order": "^0.1.2",
@@ -76,5 +90,20 @@
     "react-dom": "^17.0.2",
     "react-i18next": "^13.0.1",
     "react-router-dom": "^6.2.1"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.laptop": {
+        "target": "chrome.app",
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "chrome.iphone7": {
+        "target": "chrome.app",
+        "preset": "iPhone 7"
+      }
+    }
   }
 }

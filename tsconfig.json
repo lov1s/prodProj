@@ -16,7 +16,7 @@
         "paths": {
             "*": ["./src/*"]
         },
-        "strictNullChecks": true,
+        "strictNullChecks": false,
         // esModuleInterop позволяет работать с пакетами, которые используют
         // common js как с обычными пакета с помощью import (require() module.export) = common js
         // import Moment from 'moment';
@@ -38,7 +38,4 @@
             "module": "CommonJS"
         }
     },
-    "include": [
-        "src/**/*.ts",
-    ]
 }
