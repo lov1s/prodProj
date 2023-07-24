@@ -12,7 +12,7 @@ export function buildPlugins({
     //     // e.g. Output each progress message directly to the console:
     //     console.info(percentage, message, ...args);
     // };
-    return [
+    const plugins = [
         new HtmlWebpackPlugin({
             template: paths.html,
         }),
@@ -26,8 +26,13 @@ export function buildPlugins({
         }),
         new ReactRefreshWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        // new BundleAnalyzerPlugin({
-        //     openAnalyzer: false
-        // }),
+
     ];
+    if(isDev) {
+        plugins.push(new webpack.HotModuleReplacementPlugin());
+        // plugins.push(new BundleAnalyzerPlugin({
+        //     openAnalyzer: false
+        // }));
+    }
+    return plugins;
 }
