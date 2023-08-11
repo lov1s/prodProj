@@ -3,5 +3,10 @@
     "translate_page": "translate page",
     "lang": "Eng",
   "NotFoundPage": "NotFoundPage",
-  "short": "Eng"
+  "short": "Eng",
+  "MainPage": "MainPage",
+  "Home": "Home",
+  "About": "About",
+  "increment": "increment",
+  "decrement": "decrement"
 }

@@ -2,6 +2,9 @@
   "": "",
   "About": "About",
   "Home": "Home",
+  "MainPage": "MainPage",
   "NotFoundPage": "NotFoundPage",
+  "decrement": "decrement",
+  "increment": "increment",
   "lang": "lang"
 }

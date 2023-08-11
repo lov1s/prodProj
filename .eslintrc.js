@@ -16,7 +16,10 @@ module.exports = {
             env: {
                 node: true,
             },
-            files: [".eslintrc.{js,cjs}", "**/src/**/*.test.{ts,tsx}"],
+            files: [
+                ".eslintrc.{js,cjs}",
+                "**/src/**/*.{test,stories}.{ts,tsx}",
+            ],
             rules: {
                 "i18next/no-literal-string": "off",
             },
@@ -31,7 +34,13 @@ module.exports = {
         tsconfigRootDir: __dirname,
         sourceType: "module",
     },
-    plugins: ["react", "@typescript-eslint", "prettier", "i18next"],
+    plugins: [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "i18next",
+        "react-hooks",
+    ],
     rules: {
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
@@ -41,6 +50,8 @@ module.exports = {
         "@typescript-eslint/strict-boolean-expressions": 1,
         "@typescript-eslint/consistent-type-assertions": 1,
         "@typescript-eslint/no-non-null-assertion": 1,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
         "@typescript-eslint/naming-convention": [
             "warn",
             {
