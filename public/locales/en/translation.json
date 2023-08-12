@@ -8,5 +8,9 @@
   "Home": "Home",
   "About": "About",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Log in": "Log in",
+  "Sign in": "Sign in",
+  "Input username": "Input username",
+  "Input password": "Input password"
 }

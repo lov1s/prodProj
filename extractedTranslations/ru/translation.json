@@ -2,8 +2,12 @@
   "": "",
   "About": "About",
   "Home": "Home",
+  "Input password": "Input password",
+  "Input username": "Input username",
+  "Log in": "Log in",
   "MainPage": "MainPage",
   "NotFoundPage": "Страница не найдена",
+  "Sign in": "Sign in",
   "decrement": "decrement",
   "increment": "increment",
   "lang": "lang"
