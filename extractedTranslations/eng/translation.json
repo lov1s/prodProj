@@ -1,6 +1,7 @@
 {
   "": "",
   "About": "About",
+  "Authorization": "Authorization",
   "Home": "Home",
   "Input password": "Input password",
   "Input username": "Input username",
@@ -10,5 +11,6 @@
   "Sign in": "Sign in",
   "decrement": "decrement",
   "increment": "increment",
-  "lang": "lang"
+  "lang": "lang",
+  "Выйти": "Выйти"
 }
