@@ -45,6 +45,7 @@ module.exports = {
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
         // "@typescript-eslint/strict-boolean-expressions": "warn",
+        "react/display-name": "off",
         "@typescript-eslint/prefer-nullish-coalescing": 1,
         "@typescript-eslint/no-floating-promises": 1,
         "@typescript-eslint/strict-boolean-expressions": 1,
