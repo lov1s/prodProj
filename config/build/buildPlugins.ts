@@ -7,6 +7,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 export function buildPlugins({
     paths,
     isDev,
+    apiUrl
 }: BuildOptions): webpack.WebpackPluginInstance[] {
     // const handler = (percentage:number, message:string, ...args:string[]) => {
     //     // e.g. Output each progress message directly to the console:
@@ -23,6 +24,7 @@ export function buildPlugins({
         }),
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
+            __API__: JSON.stringify(apiUrl),
         }),
         new ReactRefreshWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),

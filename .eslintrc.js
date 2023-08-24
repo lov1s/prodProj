@@ -41,6 +41,10 @@ module.exports = {
         "i18next",
         "react-hooks",
     ],
+    globals: {
+        __IS_DEV__: true,
+        __API__: true,
+    },
     rules: {
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
